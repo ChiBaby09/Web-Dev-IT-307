@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page 1</title>
+
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="css/style.css" >
+    
+    <script src="bootstrap/js/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>      
+
+<style>
+    body{
+       
+        height: 500px;
+       
+        
+        }
+    
+    
+</style>
+    
+</head>
+<body style="height: 500px;">
+    <script>
+    
+        var holidays = [
+            //0
+            {Name:"New Years Day",Detail:"is public holiday in all countries that observe the Gregorian calendar, with the exception of Israel.",Day:"Jan1,Tuesday"},
+            //1
+            {Name:"New Year's Holiday",Detail:"President has ordered the suspension of government work and classes in state universities and colleges.",Day:"Jan2,Wednesday"},
+            //2
+            {Name:"Chinese New Year",Detail:"is very similar to the Western one, swathed in traditions and rituals.",Day:"Feb5,Tuesday"},
+            //3
+            {Name:"People Power Rebulotion",Detail:"The EDSA Revolution was a series of popular demonstrations in the Philippines that began in 1983 and culminated in 1986.",Day:"Feb25,Monday"},
+            //4
+            {Name:"Davao City Day",Detail:"This non-working day marks the creation of the City of Davao on March 1936.", Day:"Mar16,Saturday"},
+            //5
+            {Name:"The Day of Valor",Detail:"It commemorates the fall of the Bataan peninsula during World War II.", Day:"Apr9,Tuesday"},
+             //6
+            {Name:"Maundy Thursday",Detail:"Commemorates the last supper and established the ceremony known as the Eucharist.", Day:"Apr18,Thursday"},
+             //7
+            {Name:"Good Friday",Detail:"occurs on the Friday before Easter.The day commemorates the Crucifixion of Jesus.", Day:"Apr19,Friday"},
+             //8
+            {Name:"Black Saturday",Detail:"Day before Easter and the last day of Holy Week in which Christians prepare for Easter.It commemorates the day that Jesus Christ's body lay in the tomb.", Day:"Apr20,Saturday"},
+             //9
+            {Name:"Labor Day",Detail:"This holiday is most commonly associated as a commemoration of the achievements of the labor movement.", Day:"May1,Wednesday"},
+             //10
+            {Name:"Eid'l Fitr",Detail:"The festival of Eid al-Fitr, the festival of Fast breaking marks the end of Ramadan.", Day:"Jun5,Wednesday"},
+             //11
+            {Name:"Independence Day",Detail:"Celebrates the Philippine Declaration of Independence on 12 June 1898.", Day:"Jun12,Wednesday"},
+             //12
+            {Name:"Manila Day",Detail:"This special non-working day honors the 1571 founding of the city by Miguel Lopez de Legaspi(Manila only).", Day:"Jun24,Monday"},
+             //13
+            {Name:"Eidul Adha",Detail:"The Feast of Sacrifice is the most important feast of the Muslim calendar.", Day:"Aug12,Monday"},
+             //14
+            {Name:"Ninoy Aquino Day",Detail:"The holiday commemorates the assassination of former Senator Benigno 'Ninoy' Aquino, Jr. on 21 August 1983.", Day:"Aug21,Wednesday"},
+             //15
+            {Name:"National Heroes Day",Detail:"Celebrated on the last Monday in August,this holiday was established to honour the efforts of all national heroes.", Day:"Aug26,Monday"},
+             //16
+            {Name:"All Saint's Day",Detail:"The Pope dedicated the day as a holiday to honor the Blessed Virgin and all the martyrs.", Day:"Nov1,Friday"},
+             //17
+            {Name:"All Soul's Day",Detail:"Dedicated to the remembrance of the departed.All Soul's Day follows All Saint's Day.", Day:"Nov2,Saturday"},
+             //18
+            {Name:"Bonifacio Day",Detail:"Known in the Philippines as 'Araw ng Kapanganakan ni Bonifacio',this day commeorates the birth of Andres Bonifacio on 30 November 1863.", Day:"Nov30,Saturday"},
+             //19
+            {Name:"Immaculate Conception Day",Detail:"It is a day that celebrates the belief that Mary,mother of Jesus,was preserved from original sin all of her life.", Day:"Dec8,Sunday"},
+             //20
+            {Name:"Christmas Eve",Detail:"Marks the culmination of the Advent period before Christmas that stated on the fourth Sunday before Christmas Eve.", Day:"Dec24,,Tuesday"},
+             //21
+            {Name:"Christmas Day",Detail:"The celebrates the Nativity of Jesus,the date which according to tradition took place on 25th December 1 BC.", Day:"Dec25,Wednesday"},
+             //22
+            {Name:"Rizal Day",Detail:"Commemorates the excution of Jose Rizal by the Spanish on 30 Dec 1896.", Day:"Dec30,Monday"},
+             //23
+            {Name:"New Year's Eve",Detail:"The last of the year in the Gregorian calendar is usually celebrated with parties as midnight approaches.", Day:"Dec31,Tuesday"},
+            
+            
+        ];
+    
+        localStorage.setItem('holidays', JSON.stringify(holidays));    
+           
+    
+    </script>
+    
+    
+    <script>
+        var holidaysArray = JSON.parse(localStorage.getItem('holidays'));
+    function january1()
+        {
+            
+            
+            
+            for (var x in holidaysArray){
+                 document.getElementById("holiName").innerHTML = holidaysArray[0].Name+ " (" +holidaysArray[0].Day+")";
+                 document.getElementById("details").innerHTML = holidaysArray[0].Detail;
+            }
+            
+        }
+        function january2()
+        {
+            
+           
+            
+            for (var x in holidaysArray){
+                 document.getElementById("holiName").innerHTML = holidaysArray[1].Name+ " (" +holidaysArray[1].Day+")";
+                 document.getElementById("details").innerHTML = holidaysArray[1].Detail;
+            }
+            
+        }
+        function Feb5()
+        {
+            
+           
+            
+            for (var x in holidaysArray){
+                 document.getElementById("holiName").innerHTML = holidaysArray[2].Name+ " (" +holidaysArray[2].Day+")";
+                 document.getElementById("details").innerHTML = holidaysArray[2].Detail;
+            }
+            
+        }
+        function Feb25()
+        {
+            
+        
+            
+            for (var x in holidaysArray){
+                 document.getElementById("holiName").innerHTML = holidaysArray[3].Name+ " (" +holidaysArray[3].Day+")";
+                 document.getElementById("details").innerHTML = holidaysArray[3].Detail;
+            }
+            
+        }
+        
+         function mar16()
+        {
+            
+        
+            
+            for (var x in holidaysArray){
+                 document.getElementById("holiName").innerHTML = holidaysArray[4].Name+ " (" +holidaysArray[4].Day+")";
+                 document.getElementById("details").innerHTML = holidaysArray[4].Detail;
+            }
+            
+        }
+        function Apr09()
+        {
+            
+        
+            
+            for (var x in holidaysArray){
+                 document.getElementById("holiName").innerHTML = holidaysArray[5].Name+ " (" +holidaysArray[5].Day+")";
+                 document.getElementById("details").innerHTML = holidaysArray[5].Detail;
+            }
+            
+        }
+        function Apr18()
+        {
+            
+        
+            
+            for (var x in holidaysArray){
+                 document.getElementById("holiName").innerHTML = holidaysArray[6].Name+ " (" +holidaysArray[6].Day+")";
+                 document.getElementById("details").innerHTML = holidaysArray[6].Detail;
+            }
+            
+        }
+        function Apr19()
+        {
+            
+        
+            
+            for (var x in holidaysArray){
+                 document.getElementById("holiName").innerHTML = holidaysArray[7].Name+ " (" +holidaysArray[7].Day+")";
+                 document.getElementById("details").innerHTML = holidaysArray[7].Detail;
+            }
+            
+        }
+        function Apr20()
+        {
+            
+        
+            
+            for (var x in holidaysArray){
+                 document.getElementById("holiName").innerHTML = holidaysArray[8].Name+ " (" +holidaysArray[8].Day+")";
+                 document.getElementById("details").innerHTML = holidaysArray[8].Detail;
+            }
+            
+        }
+        function May01()
+        {
+            
+        
+            
+            for (var x in holidaysArray){
+                 document.getElementById("holiName").innerHTML = holidaysArray[9].Name+ " (" +holidaysArray[9].Day+")";
+                 document.getElementById("details").innerHTML = holidaysArray[9].Detail;
+            }
+            
+        }
+        function Jun5()
+        {
+            
+        
+            
+            for (var x in holidaysArray){
+                 document.getElementById("holiName").innerHTML = holidaysArray[10].Name+ " (" +holidaysArray[10].Day+")";
+                 document.getElementById("details").innerHTML = holidaysArray[10].Detail;
+            }
+            
+        }
+        function Jun12()
+        {
+            
+        
+            
+            for (var x in holidaysArray){
+                 document.getElementById("holiName").innerHTML = holidaysArray[11].Name+ " (" +holidaysArray[11].Day+")";
+                 document.getElementById("details").innerHTML = holidaysArray[11].Detail;
+            }
+            
+        }
+        function Jun24()
+        {
+            
+        
+            
+            for (var x in holidaysArray){
+                 document.getElementById("holiName").innerHTML = holidaysArray[12].Name+ " (" +holidaysArray[12].Day+")";
+                 document.getElementById("details").innerHTML = holidaysArray[12].Detail;
+            }
+            
+        }
+        function Aug12()
+        {
+            
+        
+            
+            for (var x in holidaysArray){
+                 document.getElementById("holiName").innerHTML = holidaysArray[13].Name+ " (" +holidaysArray[13].Day+")";
+                 document.getElementById("details").innerHTML = holidaysArray[13].Detail;
+            }
+            
+        }
+        function Aug21()
+        {
+            
+        
+            
+            for (var x in holidaysArray){
+                 document.getElementById("holiName").innerHTML = holidaysArray[14].Name+ " (" +holidaysArray[14].Day+")";
+                 document.getElementById("details").innerHTML = holidaysArray[14].Detail;
+            }
+            
+        }
+        function Aug26()
+        {
+            
+        
+            
+            for (var x in holidaysArray){
+                 document.getElementById("holiName").innerHTML = holidaysArray[15].Name+ " (" +holidaysArray[15].Day+")";
+                 document.getElementById("details").innerHTML = holidaysArray[15].Detail;
+            }
+            
+        }
+        function Nov1()
+        {
+            
+        
+            
+            for (var x in holidaysArray){
+                 document.getElementById("holiName").innerHTML = holidaysArray[16].Name+ " (" +holidaysArray[16].Day+")";
+                 document.getElementById("details").innerHTML = holidaysArray[16].Detail;
+            }
+            
+        }
+        function Nov2()
+        {
+            
+        
+            
+            for (var x in holidaysArray){
+                 document.getElementById("holiName").innerHTML = holidaysArray[17].Name+ " (" +holidaysArray[17].Day+")";
+                 document.getElementById("details").innerHTML = holidaysArray[17].Detail;
+            }
+            
+        }
+        function Nov30()
+        {
+            
+        
+            
+            for (var x in holidaysArray){
+                 document.getElementById("holiName").innerHTML = holidaysArray[18].Name+ " (" +holidaysArray[18].Day+")";
+                 document.getElementById("details").innerHTML = holidaysArray[18].Detail;
+            }
+            
+        }
+        function Dec8()
+        {
+            
+        
+            
+            for (var x in holidaysArray){
+                 document.getElementById("holiName").innerHTML = holidaysArray[19].Name+ " (" +holidaysArray[19].Day+")";
+                 document.getElementById("details").innerHTML = holidaysArray[19].Detail;
+            }
+            
+        }
+        function Dec24()
+        {
+            
+        
+            
+            for (var x in holidaysArray){
+                 document.getElementById("holiName").innerHTML = holidaysArray[20].Name+ " (" +holidaysArray[20].Day+")";
+                 document.getElementById("details").innerHTML = holidaysArray[20].Detail;
+            }
+            
+        }
+        function Dec25()
+        {
+            
+        
+            
+            for (var x in holidaysArray){
+                 document.getElementById("holiName").innerHTML = holidaysArray[21].Name+ " (" +holidaysArray[21].Day+")";
+                 document.getElementById("details").innerHTML = holidaysArray[21].Detail;
+            }
+            
+        }
+        function Dec30()
+        {
+            
+        
+            
+            for (var x in holidaysArray){
+                 document.getElementById("holiName").innerHTML = holidaysArray[22].Name+ " (" +holidaysArray[22].Day+")";
+                 document.getElementById("details").innerHTML = holidaysArray[22].Detail;
+            }
+            
+        }
+        function Dec31()
+        {
+            
+        
+            
+            for (var x in holidaysArray){
+                 document.getElementById("holiName").innerHTML = holidaysArray[23].Name+ " (" +holidaysArray[23].Day+")";
+                 document.getElementById("details").innerHTML = holidaysArray[23].Detail;
+            }
+            
+        }
+        
+    </script>
+    
+    
+    
+   
+<div class="container text-center">
+    
+     <div class="col-sm-12 text-center">
+    
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-header">
+    </div>
+ <a href="index.html" style="text-decoration: none;"><h1><span class="label label-danger">Home</span></h1></a>
+ <br/>
+</nav>
+                             <!-------------------------------body------------------------------>
+        
+       <ul class="list-group text-center" style="margin-top: 100px;font-size: 25px;">
+    <p style="font-size: 30px;">Philippine Holidays</p>
+           <br/><br/>
+   <li class="list-group-item list-group-item-success" data-toggle="modal" data-target="#myModal"  onclick="january1()">
+     <a href="#">January 01</a></li>
+  <br/><li class="list-group-item list-group-item-info" data-toggle="modal" data-target="#myModal"  onclick="january2()">
+     <a href="#">January 02</a></li>
+ <br/><li class="list-group-item list-group-item-danger" data-toggle="modal" data-target="#myModal"  onclick="Feb5()">
+     <a href="#">Febuary 05</a></li>
+  <br/><li class="list-group-item list-group-item-warning" data-toggle="modal" data-target="#myModal"  onclick="Feb25()">
+     <a href="#">Febuary 25</a></li>
+  <br/><li class="list-group-item list-group-item-success" data-toggle="modal" data-target="#myModal"  onclick="mar16()">
+     <a href="#">March 16</a></li>
+  <br/><li class="list-group-item list-group-item-info" data-toggle="modal" data-target="#myModal"  onclick="Apr09()">
+     <a href="#">April 09</a></li>
+  <br/><li class="list-group-item list-group-item-danger" data-toggle="modal" data-target="#myModal"  onclick="Apr18()">
+     <a href="#">April 18</a></li>
+  <br/><li class="list-group-item list-group-item-warning" data-toggle="modal" data-target="#myModal"  onclick="Apr19()">
+     <a href="#">Arpil 19</a></li>
+ <br/><li class="list-group-item list-group-item-success" data-toggle="modal" data-target="#myModal"  onclick="Apr20()">
+     <a href="#">April 20</a></li>
+<br/><li class="list-group-item list-group-item-info" data-toggle="modal" data-target="#myModal"  onclick="May01()">
+     <a href="#">May 01</a></li>
+ 
+</ul>
+<p style="font-size: 20px;float:left;">Page 1</p><br/>
+        <a href="page2.html"><button class="btn btn-primary" style="width: 200px;font-weight: 600;">Next</button></a>
+        <br/><br/>
+
+        
+        
+         <!--------------------------------modal ------------------------->
+    
+
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-lg" style="margin-top: 250px;">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title"  style="font-size: 25px; "><div id="holiName"></div></h4>
+      </div>
+      <div class="modal-body"  style="font-size: 20px; ">
+        <div id="details"></div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+        
+        
+    </div>
+   
+           
+    <div class="col-sm-6"></div>
+    </div>
+    
+    
+        
+        
+    
+ 
+    
+    
+    
+
+  
+    
+</body>
+</html>

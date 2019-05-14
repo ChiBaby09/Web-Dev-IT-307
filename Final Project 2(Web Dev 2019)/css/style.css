@@ -1,0 +1,70 @@
+.center-text{
+    margin-left: 40px;
+    
+}
+#button-start{
+    width: 80px;
+    margin-left: 10px;
+    font-size: 15px;
+}
+#button-quit{
+    
+    width: 80px;
+    margin-left: 60px;
+    font-size: 15px;
+    
+}
+#button-difficulty{
+    
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    width: 200px;
+    margin-left: 20px;
+    
+}
+#menu{
+    
+    margin-left: 20px;
+    margin-top: 50px;
+}
+#button-home{
+    
+    padding: 5px;
+    font-size: 15px;
+    font-weight: 500;
+    width: 50px;
+    margin-left: 75px;
+    float: right;
+    
+}
+#header{
+    border-radius:5px 5px 0px 0px; 
+    width:352px;
+    background-color: #1d4047;
+    height: 50px;
+    margin-top: -50px;
+    margin-left:-61.5px;
+}
+#header-quit{
+    
+    padding: 5px;
+    font-size: 15px;
+    font-weight: 500;
+    width: 50px;
+    margin-right: 10px;
+    float: right;
+    margin-top: 8px;
+    
+}
+#header-home{
+    
+    padding: 5px;
+    font-size: 15px;
+    font-weight: 500;
+    width: 50px;
+    margin-right: 234px;
+    float: right;
+    margin-top: 8px;
+    
+}
